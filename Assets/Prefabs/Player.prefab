@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2653480810450561143}
   - component: {fileID: 2653480810450561142}
+  - component: {fileID: 3786405104554918550}
   - component: {fileID: 2653480810450561128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,6 +81,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &3786405104554918550
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653480810450561141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.75}
+    newSize: {x: 0.99, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.49499997, y: 0.08341789}
+      - {x: 0.39640376, y: 0.055586815}
+      - {x: 0.275, y: 0.053022385}
+      - {x: 0.14059336, y: 0.13624287}
+      - {x: 0.08821991, y: 0.375}
+      - {x: -0.0790112, y: 0.375}
+      - {x: -0.145, y: 0.125}
+      - {x: -0.265, y: 0.065}
+      - {x: -0.36193985, y: 0.01979065}
+      - {x: -0.49499997, y: 0.095}
+      - {x: -0.49499997, y: -0.24499999}
+      - {x: -0.42499998, y: -0.285}
+      - {x: -0.3895013, y: -0.23503304}
+      - {x: -0.145, y: -0.295}
+      - {x: -0.095, y: -0.375}
+      - {x: 0.105, y: -0.375}
+      - {x: 0.13416061, y: -0.28985977}
+      - {x: 0.255, y: -0.2538128}
+      - {x: 0.45499998, y: -0.265}
+      - {x: 0.49499997, y: -0.255}
 --- !u!114 &2653480810450561128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
+  health: 200
   laserPrefab: {fileID: 3300806134181015820, guid: 1d694226928244d0ab8c94811abad80a,
     type: 3}
   projectileSpeed: 20

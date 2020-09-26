@@ -65,6 +65,11 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSoundVolume); //this creates a temporary audiosource
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
     void Fire()
     {
         if (Input.GetButtonDown("Fire1"))

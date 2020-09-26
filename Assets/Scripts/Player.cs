@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        FindObjectOfType<Level>().LoadGameOver();
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSoundVolume); //this creates a temporary audiosource
     }
